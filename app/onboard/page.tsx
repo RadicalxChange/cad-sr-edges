@@ -21,19 +21,13 @@ export default async function SignUp() {
           <p className="text-sm mb-6 max-w-2xl">You already submitted the onboarding form, and the admins are reviewing your account. When your account is verified, you will be credited with 100 ∈.</p>
         ) : (
           user ? (
-            user.sessionManager === "Iron" ? (
-              <OnboardForm user={user} account={account} />
-            ) : (
-              <>
-              <p className="text-sm mb-6">Get onboarded to get the most out of your ∈dges. Sign in with your Zupass ticket to get started.</p>
-              <p className="text-sm mb-6 text-red-400">You are logged in with Google.</p>
-              <SignOutButton user={user} />
-              </>
-            )
+            <OnboardForm user={user} account={account} />
           ) : (
             <>
-            <p className="text-sm mb-6">Get onboarded to get the most out of your ∈dges. Sign in with your Zupass ticket to get started.</p>
-            <SignInButtons redirectUri="/onboard" disableGoogle />
+            <p className="text-sm mb-6">Get onboarded to get the most out of your ∈dges. Sign in to get started.</p>
+            <div className="w-48">
+              <SignInButtons redirectUri="/onboard" />
+            </div>
             </>
           )
         )

@@ -95,14 +95,14 @@ export default function CreateListingForm({
             step="1" // Ensure whole numbers only
             required
           />
-          <label htmlFor="contact" className={formStyles.formLabel}>Telegram handle (not required)</label>
+          <label htmlFor="contact" className={formStyles.formLabel}>WhatsApp username (not required)</label>
           <input
             type="text"
             id="contact"
             name="contact"
             value={formInput.contact}
             onChange={handleFormChange}
-            placeholder="Telegram handle"
+            placeholder="WhatsApp username"
             className={formStyles.formTextInput}
           />
           <button type="submit" className={formStyles.formButton}>Submit</button>

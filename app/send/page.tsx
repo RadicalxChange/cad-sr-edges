@@ -24,7 +24,7 @@ export default async function Send({ searchParams }: SendProps) {
 
   return (
     <main className="px-4 pb-4 lg:px-24 pt-12 min-h-screen-minus-header">
-      <h1 className="text-left text-lg mb-12">Send ∈dges</h1>
+      <h1 className="text-left text-lg mb-12">Send ÐEARS</h1>
       {user && user.account_id ? (
         <TransactionForm user={user} accounts={accounts} searchParams={searchParams} />
       ) : (

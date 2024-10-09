@@ -285,7 +285,7 @@ export default function TransactionForm({
             </div>
           ) : null}
           <div>
-              <label htmlFor="amount" className={styles.formLabel}>Amount of ∈dges</label>
+              <label htmlFor="amount" className={styles.formLabel}>Amount of ÐEARS</label>
               <input
                   type="number"
                   id="amount"
@@ -326,8 +326,8 @@ export default function TransactionForm({
           ) : null}
           {formData.isTaxable ? (
             <>
-            <p className="font-mono text-sm">Exit Tax: {formData.amount ? formData.amount + " ∈" : "100%"}</p>
-            {formData.amount ? (<p className="font-mono text-sm">A total of {+formData.amount * 2} ∈ will be debited from your account.</p>) : null}
+            <p className="font-mono text-sm">Exit Tax: {formData.amount ? formData.amount + " Ð" : "100%"}</p>
+            {formData.amount ? (<p className="font-mono text-sm">A total of {+formData.amount * 2} Ð will be debited from your account.</p>) : null}
             </>
           ) : null}
           <div>

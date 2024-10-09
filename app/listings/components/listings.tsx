@@ -91,7 +91,7 @@ export default function Listings({
                   placeholder="Message"
                   className={formStyles.formTextInput}
                 />
-                <label htmlFor="reward" className={formStyles.formLabel}>Price in ∈dges</label>
+                <label htmlFor="reward" className={formStyles.formLabel}>Price in ÐEARS</label>
                 <input
                   type="number"
                   id="reward"
@@ -134,7 +134,7 @@ export default function Listings({
                 <p className="mt-2 text-xs">{listing.type} posted by {getName(listing.author_id)}</p>
                 {listing.contact && <p className="mt-2 text-xs">WhatsApp: {listing.contact}</p>}
               </div>
-              <span className="mr-2 lg:mr-4">{listing.reward} ∈</span>
+              <span className="mr-2 lg:mr-4">{listing.reward} Ð</span>
               {listing.author_id === user.account_id && (
                 <button type="button" onClick={() => handleEdit(listing)} className="text-white lg:px-2 lg:py-1 rounded">
                     <Image src="/edit-pencil.svg" alt="edit" width="32" height="32" />

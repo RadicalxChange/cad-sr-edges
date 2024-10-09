@@ -19,7 +19,7 @@ export default async function Profile() {
             <p className="px-4 py-1 my-1 flex justify-between items-center">{user.email}</p>
             {account ? (
               <div className="space-y-2">
-                <p className="px-4 py-1 my-1 flex justify-between items-center">Balance: {account.balance} ∈</p>
+                <p className="px-4 py-1 my-1 flex justify-between items-center">Balance: {account.balance} Ð</p>
                 <p className="px-4 py-1 my-1 flex justify-between items-center">Velocity: {account.velocity}</p>
                 <p className="px-4 py-1 my-1 flex justify-between items-center">Member: {account.is_member ? "Yes" : account.pending_approval ? "Pending approval" : "No"}</p>
                 {user.account_is_admin ? (

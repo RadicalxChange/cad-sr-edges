@@ -54,8 +54,8 @@ export default function OnboardForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 max-w-2xl" autoComplete="off">
-      <p className="text-sm mb-6">Get onboarded to get the most out of your ∈dges.</p>
-      <p className="text-sm mb-6">Venmo $20 to @matthew-prewitt-1 and submit the following attestations, and the admins will verify your account and credit you with 100 ∈.</p>
+      <p className="text-sm mb-6">Get onboarded to get the most out of your ÐEARS.</p>
+      <p className="text-sm mb-6">Venmo $20 to @matthew-prewitt-1 and submit the following attestations, and the admins will verify your account and credit you with 100 Ð.</p>
         <div className="flex align-center min-h-12 lg:min-h-10">
             <input
                 type="checkbox"

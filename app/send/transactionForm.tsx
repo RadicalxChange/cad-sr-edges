@@ -313,7 +313,7 @@ export default function TransactionForm({
           </div>
           {recipient && typeof recipient === 'object' && recipient.is_member && senderAccount?.is_member ? (
             <div>
-                <label htmlFor="isTaxable" className={styles.formLabel}>Is this payment for a non-perishable good or work on an unlisted private / personally-owned project?</label>
+                <label htmlFor="isTaxable" className={styles.formLabel}>Is this payment for a non-perishable good?</label>
                 <input
                     type="checkbox"
                     id="isTaxable"

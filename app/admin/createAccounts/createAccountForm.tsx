@@ -85,7 +85,7 @@ export default function CreateAccountForm() {
           />
         </div>
         <div>
-            <label htmlFor="balance" className={styles.formLabel}>ÐEARS</label>
+            <label htmlFor="balance" className={styles.formLabel}>ɖears</label>
             <input
                 type="number"
                 id="balance"

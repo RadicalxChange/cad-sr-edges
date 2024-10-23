@@ -83,7 +83,7 @@ export default function CreateListingForm({
             className={formStyles.formTextInput}
             required
           />
-          <label htmlFor="reward" className={formStyles.formLabel}>Price in ÐEARS</label>
+          <label htmlFor="reward" className={formStyles.formLabel}>Price in ɖears</label>
           <input
             type="number"
             id="reward"

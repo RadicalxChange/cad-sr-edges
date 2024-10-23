@@ -13,6 +13,6 @@ export default function HeaderBalance({
     const balanceContext: IBalanceContext | null = useBalanceContext();
     
     return (
-        <p>Balance: {balanceContext?.balance || initialBalance} Ð</p>
+        <p>Balance: {balanceContext?.balance || initialBalance} ɖ</p>
     );
 }

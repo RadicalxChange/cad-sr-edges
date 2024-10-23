@@ -67,7 +67,7 @@ export default function EditAccountsList({
                                 <span className="flex-1 text-left mr-4 lg:mr-0">{account.name}</span>
                                 {editedAccount && editedAccount.id === account.id ? null : (
                                     <>
-                                    <span className="mr-2 lg:mr-4">{account.balance} Ð</span>
+                                    <span className="mr-2 lg:mr-4">{account.balance} ɖ</span>
                                     <button type="button" onClick={() => handleEdit(account)} className="text-white lg:px-2 lg:py-1 rounded">
                                         <Image src="/edit-pencil.svg" alt="edit" width="32" height="32" />
                                     </button>
@@ -117,7 +117,7 @@ export default function EditAccountsList({
                                             min="0" // Minimum amount
                                             step="1" // Ensure whole numbers only
                                             />
-                                            <span className="ml-2">Ð</span>
+                                            <span className="ml-2">ɖ</span>
                                         </label>
                                     </div>
                                     <div className="text-center">

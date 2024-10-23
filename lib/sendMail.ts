@@ -14,7 +14,7 @@ export function sendMail(recipient: Account, transactionData?: StagedTransaction
       to: recipient.email,
       from: process.env.EMAIL_SENDER,
       templateId: typeof transactionData !== 'undefined' ? process.env.TRANSACTION_MAIL_TEMPLATE_KEY : process.env.ONBOARD_MAIL_TEMPLATE_KEY,
-      subject: typeof transactionData !== 'undefined' ? transactionData.sender_name + " sent you " + transactionData.amount + " ÐEARS" : "Your ÐEARS onboarding is complete!",
+      subject: typeof transactionData !== 'undefined' ? transactionData.sender_name + " sent you " + transactionData.amount + " ɖears" : "Your ɖears onboarding is complete!",
       dynamic_template_data: typeof transactionData !== 'undefined' ? { 
         sender_name: transactionData.sender_name,
         amount: transactionData.amount,

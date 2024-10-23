@@ -55,7 +55,7 @@ export default function OnboardForm({
   return (
     <form onSubmit={handleSubmit} className="space-y-4 max-w-2xl" autoComplete="off">
       <p className="text-sm mb-6">Get onboarded to get the most out of your ÐEARS.</p>
-      <p className="text-sm mb-6">Complete the “disclosure of precarity” <a href='https://docs.google.com/forms/d/128FGblKlBAH2z--tDlje43vqelxEWM4tU6k5VgXUw_g/edit' target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">form</a>, submit the attestations below, and the admins will verify your account and credit you with 100 Ð.</p>
+      <p className="text-sm mb-6">Submit the attestation below, and the admins will verify your account and credit you with 100 Ð.</p>
         <div className="flex align-center min-h-12 lg:min-h-10">
             <input
                 type="checkbox"
@@ -67,18 +67,6 @@ export default function OnboardForm({
                 required
             />
             <label htmlFor="agreedRules" className="inline-block my-auto text-sm font-medium text-gray-600 dark:text-gray-400">I have read and agree to the <a href='/rules' target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">rules</a>.</label>
-        </div>
-        <div className="flex align-center min-h-12 lg:min-h-10">
-            <input
-                type="checkbox"
-                id="paidFee"
-                name="paidFee"
-                checked={formData.paidFee}
-                onChange={handleChange}
-                className="mr-3"
-                required
-            />
-            <label htmlFor="paidFee" className="inline-block my-auto text-sm font-medium text-gray-600 dark:text-gray-400">I have completed the Disclosure of Precarity form.</label>
         </div>
         <div>
             <button

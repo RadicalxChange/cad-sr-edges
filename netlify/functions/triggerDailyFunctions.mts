@@ -5,7 +5,7 @@ const functionHandler: Handler = async (event, context) => {
   console.log("Running scheduled function for depreciating velocity");
 
   try {
-    const response = await axios.get(process.env.AUTH0_BASE_URL + '/api/depreciateVelocities', {
+    const response = await axios.get(process.env.AUTH0_BASE_URL + '/api/dailyFunctions', {
       params: {
         secret: process.env.NETLIFY_SECRET || '',
       }

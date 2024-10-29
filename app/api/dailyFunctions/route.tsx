@@ -15,11 +15,11 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    console.log("Running scheduled function for depreciating velocity.");
+    console.log("Running scheduled function for depreciating velocity and demurrage.");
 
-    const count = await prisma.$executeRaw`UPDATE "Account" SET "velocity" = FLOOR("velocity" * 0.95)`;
+    const count = await prisma.$executeRaw`UPDATE "Account" SET "velocity" = FLOOR("velocity" * 0.95), "balance" = FLOOR("balance" * 0.95)`;
     
-    console.log(`Updated velocities for ${count} accounts`);
+    console.log(`Updated velocities and balances for ${count} accounts`);
 
     return new Response(
         JSON.stringify({ message: `Successfully updated velocities for ${count} accounts.` }),
